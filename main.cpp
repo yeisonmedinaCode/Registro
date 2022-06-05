@@ -1,11 +1,14 @@
-// Registro.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "Seccion.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World 2022!\n";
+    Seccion seccion1;
+    seccion1.setNombre("Yeison");
+
+    std::cout << "Hello World 2022!\n" << seccion1.getNombre() << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -1,18 +1,40 @@
-#ifndef SECCION_H_INCLUDED
-#define SECCION_H_INCLUDED
+
+#ifndef SECCION_H
+#define SECCION_H
+#include <string>
 
 class Seccion {
 private:
-	string Nombre;
-	string Aula;
-	string Hora;
-	string Seccion;
-	string UV;
+	std::string Nombre;
+	std::string Aula;
+	std::string Hora;
+	std::string Seccion;
+	std::string UV;
 	int Cupos;
-	string Alumnos[];
 public:
-	void setNombre(string Nombre);
-	string getNombre();
+	void setNombre(std::string Nombre);
+	std::string getNombre();
+
+	//
+	void setAula(std::string Aula);
+	std::string getAula();
+
+	//dsfd
+	void setHora(std::string Hora);
+	std::string getHora();
+
+	//
+	void setSeccion(std::string Seccion);
+	std::string getSeccion();
+
+	//
+	void setUV(std::string UV);
+	std::string getUV();
+
+	//
+	void setCupos(int Cupos);
+	int getCupos();
+
 }; 
 
-#endif //SECCION_H_INCLUDED
+#endif //SECCION_H
